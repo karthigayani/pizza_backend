@@ -54,7 +54,7 @@ router.get("/getallusers", async (req, res) => {
 router.post('/deleteuser', async (req, res) => {
   const userid = req.body.userid
   try {
-    if (userid === "63ee66e10222b6f8ec0a42ec" || userid === "63ee676d0222b6f8ec0a42f4") {
+    if (userid === "651519448a689bf39c6b680a" || userid === "6515197a8a689bf39c6b680c") {
       res.status(401).send("Unauthorized")
     } else {
       await User.findOneAndDelete({ _id: userid })
